@@ -74,7 +74,7 @@ http://localhost:8000
 
 ## App 下載
 
-- [App Store](https://apps.apple.com/id6786215177)
+- [App Store](https://apps.apple.com/app/id6786215177)
 - [Google Play](https://play.google.com/store/apps/details?id=com.himydream.bunnycatch)
 
 ## 部署
@@ -90,4 +90,3 @@ http://localhost:8000
 ## 相關連結
 
 - [HiMtDream 工作室](https://himydream.me/)
-
