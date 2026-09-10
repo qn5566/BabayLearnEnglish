@@ -48,7 +48,7 @@
     }
   },
   "notice": {
-    "enabled": true,
+    "enabled": false,
     "id": "welcome-20260910",
     "title": {
       "en": "Notice"
