@@ -7,8 +7,8 @@ const translations = {
     feature1Title: '字母啟蒙', feature1Text: '從基礎開始，輕鬆認識 A–Z。',
     feature2Title: '聽說練習', feature2Text: '跟著聲音反覆聽，自然熟悉發音。',
     feature3Title: '趣味互動', feature3Text: '在遊戲情境中，維持學習動力。',
-    backToTop: '回到上方 ↑', title: 'Baby Learns English｜寶貝學英文 App 下載',
-    description: '陪孩子從 A 到 Z，在遊戲與聲音中快樂學英文。'
+    backToTop: '回到上方 ↑', title: '寶貝學英文｜幼兒英語學習 App 下載',
+    description: '寶貝學英文是適合幼兒的英文字母與發音學習 App，透過可愛角色、聲音與趣味互動，陪孩子從 A 到 Z 開心學英文。'
   },
   ja: {
     appName: 'はじめての英語', languageLabel: '言語を選択', download: '無料ダウンロード',
