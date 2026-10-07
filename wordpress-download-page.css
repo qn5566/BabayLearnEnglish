@@ -1,0 +1,280 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap');
+
+    .ble-wp-landing {
+
+      --pastel-pink: #FFB7C5;
+      --pastel-blue: #A2D2FF;
+      --pastel-green: #B7E4C7;
+      --pastel-orange: #FFD1A4;
+      --pastel-purple: #C8B6FF;
+      --pastel-yellow: #FFE599;
+      --text-dark: #2C3A47;
+      --text-soft: #576574;
+
+      width: 100%;
+
+      background: linear-gradient(135deg, #F0FDF4 0%, #F4F9FF 50%, #EBF4FF 100%);
+      color: var(--text-dark);
+      font-family: "Zen Maru Gothic", "Noto Sans TC", -apple-system, sans-serif;
+      line-height: 1.8;
+      overflow: hidden;
+      isolation: isolate;
+      position: relative;
+      padding-bottom: 50px;
+    }
+.ble-wp-landing, .ble-wp-landing * { box-sizing: border-box; }
+.ble-wp-landing a { text-decoration: none; color: inherit; }
+.ble-wp-landing img { display: block; max-width: 100%; height: auto; }
+.ble-wp-landing .ble-shell { width: min(1180px, calc(100% - 36px)); margin: 0 auto; position: relative; z-index: 2; }
+.ble-wp-landing .ble-bg-floating { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
+.ble-wp-landing .ble-snowflake {
+      position: absolute;
+      top: -10%;
+      color: #FFF;
+      text-shadow: 0 0 10px rgba(162, 210, 255, 0.95);
+      font-size: 24px;
+      opacity: 0.88;
+      animation: ble-snow-fall 12s linear infinite;
+    }
+.ble-wp-landing .ble-snow-1 { left: 8%; animation-duration: 11s; animation-delay: 0s; font-size: 28px; }
+.ble-wp-landing .ble-snow-2 { left: 25%; animation-duration: 15s; animation-delay: 3s; font-size: 20px; }
+.ble-wp-landing .ble-snow-3 { left: 48%; animation-duration: 13s; animation-delay: 1s; font-size: 32px; }
+.ble-wp-landing .ble-snow-4 { left: 72%; animation-duration: 16s; animation-delay: 4s; font-size: 22px; }
+.ble-wp-landing .ble-snow-5 { left: 88%; animation-duration: 12s; animation-delay: 2s; font-size: 26px; }
+
+    @keyframes ble-snow-fall {
+      0% { transform: translateY(0) rotate(0deg); opacity: 0.9; }
+      100% { transform: translateY(110vh) rotate(360deg); opacity: 0.15; }
+    }
+.ble-wp-landing .ble-letter {
+      position: absolute;
+      font-family: 'Fredoka', cursive;
+      font-weight: 700;
+      opacity: 0.22;
+      user-select: none;
+      animation: ble-float-letter 13s ease-in-out infinite alternate;
+    }
+.ble-wp-landing .ble-l-a { top: 5%; left: 3%; font-size: 85px; color: #70A1FF; transform: rotate(-12deg); animation-duration: 11s; }
+.ble-wp-landing .ble-l-b { top: 14%; right: 4%; font-size: 95px; color: #2ED573; transform: rotate(15deg); animation-duration: 15s; }
+.ble-wp-landing .ble-l-c { top: 26%; left: 1.5%; font-size: 80px; color: var(--pastel-orange); transform: rotate(-8deg); animation-duration: 13s; }
+.ble-wp-landing .ble-l-d { top: 38%; right: 3%; font-size: 90px; color: var(--pastel-purple); transform: rotate(18deg); animation-duration: 14s; }
+.ble-wp-landing .ble-l-e { top: 50%; left: 4%; font-size: 85px; color: var(--pastel-green); transform: rotate(-10deg); animation-duration: 12s; }
+.ble-wp-landing .ble-l-f { top: 62%; right: 2.5%; font-size: 95px; color: #FF7B9C; transform: rotate(12deg); animation-duration: 16s; }
+.ble-wp-landing .ble-l-g { top: 72%; left: 2%; font-size: 80px; color: #54A0FF; transform: rotate(-15deg); animation-duration: 10s; }
+.ble-wp-landing .ble-l-h { top: 82%; right: 4%; font-size: 90px; color: #FFB703; transform: rotate(8deg); animation-duration: 13s; }
+.ble-wp-landing .ble-l-i { top: 90%; left: 5%; font-size: 85px; color: #70A1FF; transform: rotate(-6deg); animation-duration: 14s; }
+.ble-wp-landing .ble-l-j { top: 32%; left: 46%; font-size: 65px; color: #1DD1A1; opacity: 0.25; animation-duration: 9s; }
+.ble-wp-landing .ble-l-k { top: 76%; right: 45%; font-size: 70px; color: #54A0FF; opacity: 0.25; animation-duration: 11s; }
+
+    @keyframes ble-float-letter {
+      0% { transform: translateY(0) rotate(0deg) scale(1); }
+      100% { transform: translateY(-32px) rotate(12deg) scale(1.08); }
+    }
+.ble-wp-landing .ble-nav { display: flex; align-items: center; justify-content: space-between; padding: 22px 0; border-bottom: 3px dashed #C8E6C9; }
+.ble-wp-landing .ble-brand { display: flex; align-items: center; gap: 16px; }
+.ble-wp-landing .ble-brand-icon-wrap { position: relative; display: inline-block; }
+.ble-wp-landing .ble-app-icon-img {
+      width: 72px; height: 72px; border-radius: 22px; border: 3px solid #FFF; box-shadow: 0 10px 25px rgba(84, 160, 255, 0.3); transform: rotate(-3deg); transition: transform .3s ease;
+    }
+.ble-wp-landing .ble-brand:hover .ble-app-icon-img { transform: rotate(2deg) scale(1.06); }
+.ble-wp-landing .ble-brand-title { font-size: 22px; font-weight: 900; color: var(--text-dark); display: block; line-height: 1.1; }
+.ble-wp-landing .ble-brand-sub { font-size: 12px; color: #1DD1A1; font-family: 'Fredoka', cursive; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; margin-top: 3px; }
+.ble-wp-landing .ble-free-badge {
+      display: inline-flex; align-items: center; gap: 6px; padding: 7px 20px; background: #E8F8F5; border: 2.5px solid #1DD1A1; color: #10AC84; font-weight: 900; border-radius: 99px; font-size: 14px; transform: rotate(-1.5deg); box-shadow: 0 4px 14px rgba(29, 209, 161, 0.2); margin-bottom: 18px;
+    }
+.ble-wp-landing .ble-hero { padding: 40px 0 60px; }
+.ble-wp-landing .ble-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
+.ble-wp-landing .ble-title { font-size: clamp(30px, 3.8vw, 46px); line-height: 1.38; font-weight: 900; color: var(--text-dark); margin: 0 0 16px; }
+.ble-wp-landing .ble-title span.ble-t-pink { color: #10AC84; background: #E8F8F5; padding: 2px 14px; border-radius: 14px; }
+.ble-wp-landing .ble-title span.ble-t-blue { color: #2E86DE; background: #E1F0FF; padding: 2px 14px; border-radius: 14px; }
+.ble-wp-landing .ble-title span.ble-t-orange { color: #FF9F43; background: #FFF0E1; padding: 2px 14px; border-radius: 14px; }
+.ble-wp-landing .ble-title span.ble-en-sub { display: block; font-family: 'Fredoka', cursive; font-size: clamp(17px, 2vw, 24px); color: #54A0FF; margin-top: 8px; font-weight: 600; }
+.ble-wp-landing .ble-lead { font-size: clamp(15px, 1.6vw, 18px); color: var(--text-soft); margin-bottom: 28px; line-height: 1.85; }
+.ble-wp-landing .ble-download-card {
+      background: rgba(255, 255, 255, 0.95);
+      padding: 26px;
+      border-radius: 28px;
+      border: 3px solid #D8F3DC;
+      box-shadow: 0 16px 40px rgba(84, 160, 255, 0.18);
+      max-width: 550px;
+    }
+.ble-wp-landing .ble-download-head { display: flex; justify-content: space-between; align-items: center; font-size: 14px; font-weight: 900; color: var(--text-dark); margin-bottom: 14px; }
+.ble-wp-landing .ble-download-head span.ble-tag-free { color: #FFF; background: #1DD1A1; padding: 2px 12px; border-radius: 99px; font-size: 12px; }
+.ble-wp-landing .ble-actions { display: grid; grid-template-columns: 1fr 1fr; gap: 14px; }
+.ble-wp-landing .ble-store {
+      display: flex; align-items: center; justify-content: center; gap: 12px; height: 62px; padding: 10px 18px; border-radius: 20px; color: #fff !important; font-weight: 700; position: relative; overflow: hidden; transition: all .35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    }
+.ble-wp-landing .ble-store::before {
+      content: ""; position: absolute; top: 0; left: -100%; width: 100%; height: 100%; background: linear-gradient(90deg, transparent, rgba(255,255,255,0.45), transparent); transition: left .6s ease;
+    }
+.ble-wp-landing .ble-store:hover::before { left: 100%; }
+.ble-wp-landing .ble-store-ios { background: linear-gradient(135deg, #2F3542 0%, #57606F 100%); box-shadow: 0 8px 22px rgba(47,53,66,0.3); }
+.ble-wp-landing .ble-store-android { background: linear-gradient(135deg, #54A0FF 0%, #1DD1A1 100%); box-shadow: 0 8px 22px rgba(84,160,255,0.35); }
+.ble-wp-landing .ble-store:hover { transform: translateY(-4px) scale(1.04); box-shadow: 0 14px 30px rgba(29,209,161,0.45); }
+.ble-wp-landing .ble-store svg { width: 28px; height: 28px; fill: currentColor; flex-shrink: 0; }
+.ble-wp-landing .ble-store small { display: block; font-size: 10px; opacity: .88; letter-spacing: .05em; font-family: 'Fredoka', cursive; }
+.ble-wp-landing .ble-store strong { display: block; font-size: 16px; font-weight: 700; line-height: 1.1; margin-top: 2px; }
+.ble-wp-landing .ble-hero-visual { position: relative; text-align: center; }
+.ble-wp-landing .ble-hero-frame {
+      overflow: hidden; border: 8px solid #FFF; border-radius: 40px 40px 40px 100px; box-shadow: 0 24px 60px rgba(84, 160, 255, 0.22); transform: rotate(1.5deg); background: #FFF;
+    }
+.ble-wp-landing .ble-hero-frame img { width: 100%; height: auto; display: block; }
+.ble-wp-landing .ble-sections { padding: 60px 0; }
+.ble-wp-landing .ble-sec-head { text-align: center; max-width: 720px; margin: 0 auto 50px; }
+.ble-wp-landing .ble-sec-tag { font-family: 'Fredoka', cursive; font-size: 16px; color: #10AC84; letter-spacing: .1em; text-transform: uppercase; font-weight: 700; }
+.ble-wp-landing .ble-sec-title { font-size: clamp(26px, 3.5vw, 38px); font-weight: 900; margin-top: 6px; }
+.ble-wp-landing .ble-three-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 28px; }
+.ble-wp-landing .ble-part-card {
+      background: #FFFFFF;
+      border-radius: 32px;
+      padding: 26px;
+      border: 3px solid #FFF;
+      box-shadow: 0 14px 36px rgba(44, 58, 71, 0.06);
+      transition: all .35s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      position: relative;
+      display: flex; flex-direction: column; justify-content: space-between;
+    }
+.ble-wp-landing .ble-part-card:hover { transform: translateY(-8px) scale(1.02); box-shadow: 0 22px 50px rgba(84, 160, 255, 0.25); }
+.ble-wp-landing .ble-part-1 { border-color: #D8F3DC; }
+.ble-wp-landing .ble-part-1 .ble-part-badge { background: #D8F3DC; color: #10AC84; }
+.ble-wp-landing .ble-part-1 h3 { color: #10AC84 !important; }
+.ble-wp-landing .ble-part-2 { border-color: #E1F0FF; }
+.ble-wp-landing .ble-part-2 .ble-part-badge { background: #E1F0FF; color: #2E86DE; }
+.ble-wp-landing .ble-part-2 h3 { color: #2E86DE !important; }
+.ble-wp-landing .ble-part-3 { border-color: #FFF0E1; }
+.ble-wp-landing .ble-part-3 .ble-part-badge { background: #FFF0E1; color: #FF9F43; }
+.ble-wp-landing .ble-part-3 h3 { color: #FF9F43 !important; }
+.ble-wp-landing .ble-part-badge {
+      display: inline-block; padding: 5px 16px; border-radius: 99px; font-weight: 900; font-size: 13px; margin-bottom: 16px;
+    }
+.ble-wp-landing .ble-part-img {
+      border-radius: 22px; overflow: hidden; aspect-ratio: 4/3; margin-bottom: 18px; box-shadow: 0 8px 20px rgba(0,0,0,0.06); background: #F8F9FA;
+    }
+.ble-wp-landing .ble-part-img img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s ease; display: block; }
+.ble-wp-landing .ble-part-card:hover .ble-part-img img { transform: scale(1.06); }
+.ble-wp-landing .ble-part-content h3 { font-size: 22px; font-weight: 900; margin-bottom: 4px; }
+.ble-wp-landing .ble-part-en { font-family: 'Fredoka', cursive; font-size: 14px; color: #54A0FF; margin-bottom: 10px; display: block; font-weight: 600; }
+.ble-wp-landing .ble-part-desc { font-size: 14px; color: var(--text-soft); line-height: 1.75; font-weight: 500; }
+.ble-wp-landing .ble-part-footer {
+      margin-top: 18px; padding-top: 14px; border-top: 2px dashed #F1F2F6; font-size: 13px; font-weight: 700; color: #1DD1A1; display: flex; justify-content: space-between;
+    }
+.ble-wp-landing .ble-highlights {
+      display: grid; grid-template-columns: repeat(4, 1fr); gap: 18px; margin: 40px 0 60px;
+    }
+.ble-wp-landing .ble-hl-item {
+      background: rgba(255,255,255,0.95); padding: 22px 18px; border-radius: 24px; text-align: center; border: 2px solid #FFF; box-shadow: 0 8px 24px rgba(0,0,0,0.04);
+    }
+.ble-wp-landing .ble-hl-icon { font-size: 32px; margin-bottom: 8px; }
+.ble-wp-landing .ble-hl-title { font-size: 16px; font-weight: 900; color: var(--text-dark); margin-bottom: 2px; }
+.ble-wp-landing .ble-hl-en { font-family: 'Fredoka', cursive; font-size: 12px; color: #54A0FF; margin-bottom: 4px; }
+.ble-wp-landing .ble-hl-desc { font-size: 13px; color: var(--text-soft); }
+.ble-wp-landing .ble-gallery-sec {
+      background: linear-gradient(135deg, #EBF4FF 0%, #E3F2FD 100%);
+      padding: 60px 0; border-radius: 36px; margin: 40px 0; border: 3px solid #FFF;
+      box-shadow: 0 16px 40px rgba(84, 160, 255, 0.15);
+    }
+.ble-wp-landing .ble-gallery-sec .ble-sec-tag { color: #2E86DE; }
+.ble-wp-landing .ble-gallery { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-top: 35px; }
+.ble-wp-landing .ble-shot-card {
+      background: #FFF; padding: 12px; border-radius: 20px; box-shadow: 0 10px 25px rgba(44, 58, 71, 0.07); border: 2px solid #FFF;
+    }
+.ble-wp-landing .ble-shot-card img { width: 100%; border-radius: 14px; display: block; }
+.ble-wp-landing .ble-shot-title { text-align: center; margin-top: 10px; font-size: 14px; font-weight: 900; color: var(--text-dark); }
+.ble-wp-landing .ble-shot-en { text-align: center; font-family: 'Fredoka', cursive; font-size: 11px; color: #2E86DE; }
+.ble-wp-landing .ble-faq-sec {
+      background: linear-gradient(135deg, #EBF4FF 0%, #F0F7FF 100%);
+      padding: 50px 30px;
+      border-radius: 36px;
+      border: 3px solid #FFF;
+      box-shadow: 0 16px 40px rgba(84, 160, 255, 0.15);
+    }
+.ble-wp-landing .ble-faq-sec .ble-sec-tag { color: #2E86DE; }
+.ble-wp-landing .ble-faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.ble-wp-landing .ble-faq-item {
+      background: rgba(255, 255, 255, 0.96);
+      padding: 26px 28px;
+      border-radius: 26px;
+      border: 3px solid #FFF;
+      box-shadow: 0 10px 28px rgba(44, 58, 71, 0.05);
+      transition: transform .3s ease;
+    }
+.ble-wp-landing .ble-faq-item:hover { transform: translateY(-4px); }
+.ble-wp-landing .ble-faq-f1 { border-color: #D8F3DC; }
+.ble-wp-landing .ble-faq-f1 h3 { color: #10AC84 !important; }
+.ble-wp-landing .ble-faq-f2 { border-color: #E1F0FF; }
+.ble-wp-landing .ble-faq-f2 h3 { color: #2E86DE !important; }
+.ble-wp-landing .ble-faq-f3 { border-color: #FFF0E1; }
+.ble-wp-landing .ble-faq-f3 h3 { color: #FF9F43 !important; }
+.ble-wp-landing .ble-faq-f4 { border-color: #EBE0FF; }
+.ble-wp-landing .ble-faq-f4 h3 { color: #8E44AD !important; }
+.ble-wp-landing .ble-faq-item h3 { font-size: 18px; margin-bottom: 4px; font-weight: 900; }
+.ble-wp-landing .ble-faq-en-q { font-family: 'Fredoka', cursive; font-size: 13px; color: #54A0FF; font-weight: 600; margin-bottom: 10px; display: block; }
+.ble-wp-landing .ble-faq-item p { font-size: 14px; color: var(--text-soft); font-weight: 500; margin-bottom: 8px; line-height: 1.7; }
+.ble-wp-landing .ble-faq-en-a { font-size: 13px; color: #8795A1; font-style: italic; display: block; border-top: 2px dashed #F1F2F6; padding-top: 8px; }
+.ble-wp-landing .ble-bottom-cta {
+      background: linear-gradient(135deg, #A2D2FF 0%, #B7E4C7 100%);
+      color: #FFF; border-radius: 40px; padding: 60px 30px; text-align: center; position: relative; overflow: hidden; margin-top: 60px; box-shadow: 0 24px 60px rgba(162, 210, 255, 0.45); border: 4px solid #FFF;
+    }
+.ble-wp-landing .ble-bottom-cta h2 { color: #FFF !important; font-size: clamp(28px, 4.2vw, 46px); margin-bottom: 8px; font-weight: 900; text-shadow: 0 2px 10px rgba(43,45,66,0.1); }
+.ble-wp-landing .ble-bottom-cta .ble-cta-sub { font-family: 'Fredoka', cursive; font-size: 22px; color: #FFFFFF; margin-bottom: 18px; letter-spacing: .02em; text-shadow: 0 1px 4px rgba(0,0,0,0.1); }
+.ble-wp-landing .ble-bottom-cta p { font-size: 17px; opacity: .98; max-width: 640px; margin: 0 auto 34px; font-weight: 500; text-shadow: 0 1px 4px rgba(0,0,0,0.08); }
+.ble-wp-landing .ble-bottom-cta .ble-actions { display: flex; justify-content: center; gap: 16px; max-width: none; }
+.ble-wp-landing .ble-bottom-cta .ble-store { min-width: 210px; }
+.ble-wp-landing .ble-global-badge {
+      display: inline-flex; align-items: center; gap: 8px; background: rgba(255,255,255,0.3); backdrop-filter: blur(6px); padding: 6px 20px; border-radius: 999px; font-size: 13px; font-weight: 700; color: #FFF; margin-bottom: 20px; border: 1.5px solid rgba(255,255,255,0.6);
+    }
+.ble-wp-landing .ble-footer { text-align: center; padding: 35px 0 20px; font-size: 13px; color: var(--text-soft); border-top: 2px dashed #C8E6C9; margin-top: 60px; font-weight: 500; }
+
+
+    @media(max-width: 900px) {
+.ble-wp-landing .ble-hero-grid { grid-template-columns: 1fr; gap: 35px; text-align: center; }
+.ble-wp-landing .ble-three-grid { grid-template-columns: 1fr; }
+.ble-wp-landing .ble-highlights { grid-template-columns: repeat(2, 1fr); }
+.ble-wp-landing .ble-gallery { grid-template-columns: repeat(2, 1fr); }
+.ble-wp-landing .ble-faq-grid { grid-template-columns: 1fr; }
+    }
+    @media(max-width: 560px) {
+.ble-wp-landing .ble-actions { grid-template-columns: 1fr; }
+.ble-wp-landing .ble-bottom-cta .ble-actions { flex-direction: column; }
+.ble-wp-landing .ble-highlights { grid-template-columns: 1fr; }
+    }
+.ble-wp-landing .ble-nav-actions { display: flex; align-items: center; gap: 12px; }
+.ble-wp-landing .ble-language-picker { display: flex; align-items: center; gap: 6px; }
+.ble-wp-landing .ble-language-picker select { max-width: 155px; padding: 10px; border: 2px solid #D8F3DC; border-radius: 14px; background: #fff; color: #2C3A47; font: inherit; }
+.ble-wp-landing .sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
+.ble-wp-landing a:focus-visible, .ble-wp-landing select:focus-visible { outline: 3px solid #2E86DE; outline-offset: 4px; }
+.ble-wp-landing .ble-hero-grid > *, .ble-wp-landing .ble-three-grid > * { min-width: 0; }
+.ble-wp-landing .ble-download-card { margin-inline: auto; }
+.ble-wp-landing .ble-title em { color: #2E86DE; background: #E1F0FF; border-radius: 14px; font-style: normal; }
+.ble-wp-landing .ble-device-note { font-size: 13px; color: var(--text-soft); margin-bottom: 0; }
+@media(max-width: 560px) {
+.ble-wp-landing .ble-nav { flex-wrap: wrap; gap: 18px; }
+.ble-wp-landing .ble-nav-actions { width: 100%; justify-content: space-between; }
+.ble-wp-landing .ble-brand-title { font-size: 20px; }
+.ble-wp-landing .ble-free-badge { flex-wrap: wrap; justify-content: center; padding: 7px 12px; font-size: 12px; }
+.ble-wp-landing .ble-download-head { flex-wrap: wrap; gap: 8px; }
+.ble-wp-landing .ble-download-card { padding: 18px; }
+.ble-wp-landing .ble-title { font-size: clamp(23px, 6vw, 30px); }
+.ble-wp-landing .ble-title span.ble-t-pink, .ble-wp-landing .ble-title span.ble-t-blue, .ble-wp-landing .ble-title span.ble-t-orange { padding-inline: 6px; }
+}
+@media(prefers-reduced-motion: reduce) {
+.ble-wp-landing *, .ble-wp-landing *::before { animation: none !important; transition: none !important; }
+}
+.ble-wp-landing .ble-app-icon-img { object-fit: contain; background: #E8F8F5; padding: 4px; }
+.ble-wp-landing .ble-part-img { aspect-ratio: auto; height: 340px; background: linear-gradient(135deg, #F0FDF4, #EBF4FF); }
+.ble-wp-landing .ble-part-img img { object-fit: contain; }
+.ble-wp-landing .ble-hero-characters { display: flex; justify-content: center; gap: 28px; margin-top: 20px; }
+.ble-wp-landing .ble-hero-characters img { width: 86px; height: 154px; object-fit: contain; filter: drop-shadow(0 8px 8px rgba(44, 58, 71, .12)); }
+@media(max-width: 560px) {
+.ble-wp-landing .ble-part-img { height: 300px; }
+.ble-wp-landing .ble-hero-characters img { width: 70px; height: 125px; }
+}
+
+.ble-wp-landing { max-width: none; text-align: left; }
+.ble-wp-landing [hidden] { display: none !important; }
+.ble-wp-landing h1, .ble-wp-landing h2, .ble-wp-landing h3, .ble-wp-landing p { font-family: inherit; line-height: inherit; letter-spacing: normal; text-transform: none; }
+.ble-wp-landing .ble-title { line-height: 1.38; }
+.ble-wp-landing .ble-title .ble-en-sub { font-family: 'Fredoka', cursive; }
+.ble-wp-landing .ble-nav-cta { height: 44px; padding: 0 22px; font-size: 14px; }
+.ble-wp-landing .ble-free-en { font-family: 'Fredoka', cursive; }
+.ble-wp-landing .ble-faq-head { margin-bottom: 35px; }
