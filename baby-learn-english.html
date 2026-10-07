@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap');
+<!-- 寶貝學英文 Baby Learns English ｜ WordPress 自訂 HTML 區塊（極淡粉綠粉藍漸層 × 輕盈淺藍藝廊與 FAQ 區塊） -->
+<div class="ble-wp-landing" id="ble-top">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Noto+Sans+TC:wght@400;500;700;900&family=Zen+Maru+Gothic:wght@700;900&display=swap');
 
     .ble-wp-landing {
       /* ✨ 馬卡龍輕盈柔和調色盤 */
@@ -25,11 +28,11 @@
     .ble-wp-landing, .ble-wp-landing * { box-sizing: border-box; }
     .ble-wp-landing a { text-decoration: none; color: inherit; }
     .ble-wp-landing img { display: block; max-width: 100%; height: auto; }
-    .ble-shell { width: min(1180px, calc(100% - 36px)); margin: 0 auto; position: relative; z-index: 2; }
+    .ble-wp-shell { width: min(1180px, calc(100% - 36px)); margin: 0 auto; position: relative; z-index: 2; }
 
     /* ✨ 特效：萌萌雪花 + 飄浮英文字母 A ~ K (粉綠粉藍柔光質感) */
     .ble-bg-floating { position: absolute; inset: 0; pointer-events: none; z-index: 1; overflow: hidden; }
-
+    
     /* 萌萌雪花飄落特效 */
     .ble-snowflake {
       position: absolute;
@@ -85,7 +88,7 @@
       width: 72px; height: 72px; border-radius: 22px; border: 3px solid #FFF; box-shadow: 0 10px 25px rgba(84, 160, 255, 0.3); transform: rotate(-3deg); transition: transform .3s ease;
     }
     .ble-brand:hover .ble-app-icon-img { transform: rotate(2deg) scale(1.06); }
-
+    
     .ble-brand-title { font-size: 22px; font-weight: 900; color: var(--text-dark); display: block; line-height: 1.1; }
     .ble-brand-sub { font-size: 12px; color: #1DD1A1; font-family: 'Fredoka', cursive; letter-spacing: .12em; text-transform: uppercase; font-weight: 600; margin-top: 3px; }
 
@@ -97,7 +100,7 @@
     /* 首頁 Hero 主視覺 */
     .ble-hero { padding: 40px 0 60px; }
     .ble-hero-grid { display: grid; grid-template-columns: 1.05fr .95fr; gap: 40px; align-items: center; }
-
+    
     /* 大標題：淺粉綠與淺藍膠囊包覆 */
     .ble-title { font-size: clamp(30px, 3.8vw, 46px); line-height: 1.38; font-weight: 900; color: var(--text-dark); margin: 0 0 16px; }
     .ble-title span.ble-t-pink { color: #10AC84; background: #E8F8F5; padding: 2px 14px; border-radius: 14px; }
@@ -292,40 +295,289 @@
       .ble-bottom-cta .ble-actions { flex-direction: column; }
       .ble-highlights { grid-template-columns: 1fr; }
     }
+  </style>
 
-body { margin: 0; }
-html { scroll-behavior: smooth; }
-.ble-nav-actions { display: flex; align-items: center; gap: 12px; }
-.ble-language-picker { display: flex; align-items: center; gap: 6px; }
-.ble-language-picker select { max-width: 155px; padding: 10px; border: 2px solid #D8F3DC; border-radius: 14px; background: #fff; color: #2C3A47; font: inherit; }
-.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0,0,0,0); white-space: nowrap; border: 0; }
-.ble-wp-landing a:focus-visible, .ble-wp-landing select:focus-visible { outline: 3px solid #2E86DE; outline-offset: 4px; }
-.ble-hero-grid > *, .ble-three-grid > * { min-width: 0; }
-.ble-download-card { margin-inline: auto; }
-.ble-title em { color: #2E86DE; background: #E1F0FF; border-radius: 14px; font-style: normal; }
-.ble-device-note { font-size: 13px; color: var(--text-soft); margin-bottom: 0; }
-@media(max-width: 560px) {
-  .ble-nav { flex-wrap: wrap; gap: 18px; }
-  .ble-nav-actions { width: 100%; justify-content: space-between; }
-  .ble-brand-title { font-size: 20px; }
-  .ble-free-badge { flex-wrap: wrap; justify-content: center; padding: 7px 12px; font-size: 12px; }
-  .ble-download-head { flex-wrap: wrap; gap: 8px; }
-  .ble-download-card { padding: 18px; }
-  .ble-title { font-size: clamp(23px, 6vw, 30px); }
-  .ble-title span.ble-t-pink, .ble-title span.ble-t-blue, .ble-title span.ble-t-orange { padding-inline: 6px; }
-}
-@media(prefers-reduced-motion: reduce) {
-  html { scroll-behavior: auto; }
-  .ble-wp-landing *, .ble-wp-landing *::before { animation: none !important; transition: none !important; }
-}
+  <!-- ✨ 特效：萌萌飄雪 + 飄浮英文字母 A B C D E F G H I J K -->
+  <div class="ble-bg-floating" aria-hidden="true">
+    <div class="ble-snowflake ble-snow-1">❄</div>
+    <div class="ble-snowflake ble-snow-2">✦</div>
+    <div class="ble-snowflake ble-snow-3">❄</div>
+    <div class="ble-snowflake ble-snow-4">✦</div>
+    <div class="ble-snowflake ble-snow-5">❄</div>
 
-/* Preserve portrait screenshots and transparent character silhouettes. */
-.ble-app-icon-img { object-fit: contain; background: #E8F8F5; padding: 4px; }
-.ble-part-img { aspect-ratio: auto; height: 340px; background: linear-gradient(135deg, #F0FDF4, #EBF4FF); }
-.ble-part-img img { object-fit: contain; }
-.ble-hero-characters { display: flex; justify-content: center; gap: 28px; margin-top: 20px; }
-.ble-hero-characters img { width: 86px; height: 154px; object-fit: contain; filter: drop-shadow(0 8px 8px rgba(44, 58, 71, .12)); }
-@media(max-width: 560px) {
-  .ble-part-img { height: 300px; }
-  .ble-hero-characters img { width: 70px; height: 125px; }
-}
+    <div class="ble-letter ble-l-a">A</div>
+    <div class="ble-letter ble-l-b">B</div>
+    <div class="ble-letter ble-l-c">C</div>
+    <div class="ble-letter ble-l-d">D</div>
+    <div class="ble-letter ble-l-e">E</div>
+    <div class="ble-letter ble-l-f">F</div>
+    <div class="ble-letter ble-l-g">G</div>
+    <div class="ble-letter ble-l-h">H</div>
+    <div class="ble-letter ble-l-i">I</div>
+    <div class="ble-letter ble-l-j">J</div>
+    <div class="ble-letter ble-l-k">K</div>
+  </div>
+
+  <meta itemprop="applicationCategory" content="EducationalApplication">
+  <meta itemprop="operatingSystem" content="Android, iOS">
+  <meta itemprop="isAccessibleForFree" content="true">
+
+  <div class="ble-shell">
+    <!-- 頂部導覽列 (含有超大醒目 App Icon) -->
+    <nav class="ble-nav" aria-label="頁面導覽">
+      <a class="ble-brand" href="#ble-top">
+        <div class="ble-brand-icon-wrap">
+          <img class="ble-app-icon-img" src="https://qn5566.github.io/BabayLearnEnglish/res/1024_%20500.png" alt="寶貝學英文 App Icon">
+        </div>
+        <div>
+          <span class="ble-brand-title">寶貝學英文</span>
+          <span class="ble-brand-sub">Baby Learns English</span>
+        </div>
+      </a>
+      <a class="ble-store ble-store-android" style="height:44px; padding:0 22px; font-size:14px;" href="#ble-download">GET APP / 免費下載</a>
+    </nav>
+
+    <!-- 首頁 Hero 主視覺 -->
+    <div class="ble-hero">
+      <div class="ble-hero-grid">
+        <div>
+          <!-- ✨ 亮點：免費宣告 Badge -->
+          <div class="ble-free-badge">
+            <span>🎁 100% 全額免費學習無負擔</span>
+            <span style="font-family:'Fredoka', cursive;">Free App</span>
+          </div>
+
+          <!-- ✨ 可愛繽紛標題 (粉綠與淺藍膠囊包覆) -->
+          <h1 class="ble-title" itemprop="name">
+            <span class="ble-t-pink">從 A 到 Z，</span><br>
+            陪孩子<span class="ble-t-blue">開心玩</span>、<span class="ble-t-orange">自然學</span>
+            <span class="ble-en-sub">Learn ABCs & Phonics with Fun Games!</span>
+          </h1>
+
+          <p class="ble-lead" itemprop="description">
+            專為幼兒啟蒙打造的英文字母與發音學習 App。結合可愛兔兔與小熊角色、生動語音互動與遊戲情境，讓孩子在無壓力、玩樂中建立英文學習的第一份自信！
+          </p>
+
+          <!-- 下載卡片 -->
+          <div class="ble-download-card" id="ble-download-top">
+            <div class="ble-download-head">
+              <span>🎈 即刻開啟孩子的英文啟蒙旅程：</span>
+              <span class="ble-tag-free">100% 免費下載</span>
+            </div>
+            <div class="ble-actions">
+              <a class="ble-store ble-store-ios" itemprop="installUrl" href="https://apps.apple.com/app/id6786215177" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.26.07 2.14.69 2.88.74 1.11-.23 2.17-.89 3.35-.8 1.42.12 2.49.67 3.2 1.7-2.93 1.76-2.23 5.62.45 6.7-.54 1.42-1.24 2.84-1.88 4.63ZM12.03 7.25C11.88 5.14 13.6 3.4 15.57 3.23c.27 2.44-2.22 4.26-3.54 4.02Z"/></svg>
+                <div><small>DOWNLOAD ON THE</small><strong>App Store (iOS)</strong></div>
+              </a>
+              <a class="ble-store ble-store-android" itemprop="installUrl" href="https://play.google.com/store/apps/details?id=com.himydream.bunnycatch" target="_blank" rel="noopener">
+                <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d2ff" d="M3.6 2.3a2 2 0 0 0-.45 1.28v16.84c0 .48.16.92.45 1.28l9.5-9.7-9.5-9.7Z"/><path fill="#ffd500" d="m16.27 8.76-3.17 3.23 3.18 3.25 3.87-2.2c1.13-.64 1.13-1.46 0-2.1l-3.88-2.18Z"/><path fill="#ff3a44" d="m3.6 21.7 12.68-6.46-3.18-3.25-9.5 9.71Z"/><path fill="#00e676" d="M3.6 2.3 13.1 12l3.17-3.24L3.6 2.3Z"/></svg>
+                <div><small>GET IT ON</small><strong>Google Play (Android)</strong></div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右側 Hero 大圖展示 -->
+        <div class="ble-hero-visual">
+          <div class="ble-hero-frame">
+            <img src="https://qn5566.github.io/BabayLearnEnglish/res/1024_%20500.png" alt="寶貝學英文 App 首頁可愛介面">
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✨ 三大學習段落介紹 (淺綠、淺藍、粉橘) -->
+    <div class="ble-sections">
+      <div class="ble-sec-head">
+        <div class="ble-sec-tag">FUN LEARNING JOURNEY</div>
+        <h2 class="ble-sec-title">三大學習段落，陪伴幼兒輕鬆快樂成長</h2>
+      </div>
+
+      <div class="ble-three-grid">
+        <!-- 段落 1：淺綠風格 -->
+        <article class="ble-part-card ble-part-1">
+          <div>
+            <span class="ble-part-badge">PART 01 ・ 玩樂體驗</span>
+            <div class="ble-part-img">
+              <img src="https://qn5566.github.io/BabayLearnEnglish/res/Screenshot_20240925_145618.png" alt="遊戲玩樂畫面：抓兔兔與繽紛熱氣球">
+            </div>
+            <div class="ble-part-content">
+              <h3>趣味玩樂遊戲畫面</h3>
+              <span class="ble-part-en">Interactive Game Playtime</span>
+              <p class="ble-part-desc">
+                專為幼兒手眼協調設計！結合抓兔兔、戳氣球與彩虹小卡等歡樂互動情境，讓孩子邊玩邊笑，自然對英文產生濃厚興趣！
+              </p>
+            </div>
+          </div>
+          <div class="ble-part-footer">
+            <span>🎮 幼兒輕鬆上手</span>
+            <span>✦ 趣味點擊</span>
+          </div>
+        </article>
+
+        <!-- 段落 2：淺藍風格 -->
+        <article class="ble-part-card ble-part-2">
+          <div>
+            <span class="ble-part-badge">PART 02 ・ 啟蒙學習</span>
+            <div class="ble-part-img">
+              <img src="https://qn5566.github.io/BabayLearnEnglish/res/Screenshot_20240925_145558.png" alt="學習畫面：字母卡與清晰語音發音">
+            </div>
+            <div class="ble-part-content">
+              <h3>字母與自然發音學習</h3>
+              <span class="ble-part-en">Phonics & Alphabet Cards</span>
+              <p class="ble-part-desc">
+                收錄 26 個字母大小寫筆順與標準美式發音。搭配清晰可愛圖卡，讓寶寶一眼看懂單字、聽懂發音，建立正確啟蒙。
+              </p>
+            </div>
+          </div>
+          <div class="ble-part-footer">
+            <span>🔤 聽說讀寫基礎</span>
+            <span>✦ 標準發音</span>
+          </div>
+        </article>
+
+        <!-- 段落 3：粉橘風格 -->
+        <article class="ble-part-card ble-part-3">
+          <div>
+            <span class="ble-part-badge">PART 03 ・ 幼兒友善</span>
+            <div class="ble-part-img">
+              <img src="https://qn5566.github.io/BabayLearnEnglish/res/Screenshot_20240925_145604.png" alt="幼兒友善介面：簡單直覺免家長陪伴">
+            </div>
+            <div class="ble-part-content">
+              <h3>幼兒獨立探索遊戲</h3>
+              <span class="ble-part-en">Child-Friendly & Safe Interface</span>
+              <p class="ble-part-desc">
+                無複雜文字與艱深選單，大按鈕與色彩豐富的介面設計。2–6 歲幼兒都能獨立操作，讓家長放鬆、孩子開心學習！
+              </p>
+            </div>
+          </div>
+          <div class="ble-part-footer">
+            <span>👶 2–6歲皆可玩</span>
+            <span>✦ 家長好放心</span>
+          </div>
+        </article>
+      </div>
+    </div>
+
+    <!-- 4 大啟蒙亮點特色條 -->
+    <div class="ble-highlights">
+      <div class="ble-hl-item">
+        <div class="ble-hl-icon">🎁</div>
+        <div class="ble-hl-title">全額免費學習</div>
+        <div class="ble-hl-en">100% Free Access</div>
+        <div class="ble-hl-desc">完全免費使用，啟蒙無負擔</div>
+      </div>
+      <div class="ble-hl-item">
+        <div class="ble-hl-icon">🌍</div>
+        <div class="ble-hl-title">全球10國語言</div>
+        <div class="ble-hl-en">10 Global Languages</div>
+        <div class="ble-hl-desc">支援全球雙語與多國介面下載</div>
+      </div>
+      <div class="ble-hl-item">
+        <div class="ble-hl-icon">🔊</div>
+        <div class="ble-hl-title">真人美式發音</div>
+        <div class="ble-hl-en">Native Voiceover</div>
+        <div class="ble-hl-desc">語音清晰正統，從小養成好聽力</div>
+      </div>
+      <div class="ble-hl-item">
+        <div class="ble-hl-icon">🎈</div>
+        <div class="ble-hl-title">簡單直覺操作</div>
+        <div class="ble-hl-en">Intuitive Controls</div>
+        <div class="ble-hl-desc">幼兒自己點擊，自主探索學習</div>
+      </div>
+    </div>
+
+    <!-- ✨ 實機遊戲畫面藝廊 (改為清爽柔和淺藍色底色 #EBF4FF) -->
+    <div class="ble-gallery-sec">
+      <div class="ble-shell">
+        <div class="ble-sec-head">
+          <div class="ble-sec-tag">APP INTERFACE</div>
+          <h2 class="ble-sec-title">畫面繽紛精緻，孩子一見就愛上</h2>
+        </div>
+        <div class="ble-gallery">
+          <div class="ble-shot-card">
+            <img loading="lazy" src="https://qn5566.github.io/BabayLearnEnglish/res/Screenshot_20240925_145558.png" alt="字母學習畫面">
+            <div class="ble-shot-title">字母啟蒙清單</div>
+            <div class="ble-shot-en">Alphabet List</div>
+          </div>
+          <div class="ble-shot-card">
+            <img loading="lazy" src="https://qn5566.github.io/BabayLearnEnglish/res/Screenshot_20240925_145604.png" alt="單字記憶圖卡">
+            <div class="ble-shot-title">單字記憶圖卡</div>
+            <div class="ble-shot-en">Word Flashcards</div>
+          </div>
+          <div class="ble-shot-card">
+            <img loading="lazy" src="https://qn5566.github.io/BabayLearnEnglish/res/Screenshot_20240925_145618.png" alt="互動遊戲情境">
+            <div class="ble-shot-title">趣味互動遊戲</div>
+            <div class="ble-shot-en">Interactive Game</div>
+          </div>
+          <div class="ble-shot-card">
+            <img loading="lazy" src="https://qn5566.github.io/BabayLearnEnglish/res/1024_%20500.png" alt="歡樂學習封面">
+            <div class="ble-shot-title">可愛角色陪玩</div>
+            <div class="ble-shot-en">Cute Characters</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✨ FAQ 常見問題 (改為清爽柔和淺藍色底色 #EBF4FF) -->
+    <div class="ble-faq-sec">
+      <div class="ble-sec-head" style="margin-bottom:35px;">
+        <div class="ble-sec-tag">FREQUENTLY ASKED QUESTIONS</div>
+        <h2 class="ble-sec-title">家長常見問題 FAQ (Bilingual)</h2>
+      </div>
+      <div class="ble-faq-grid">
+        <!-- 淺綠 FAQ -->
+        <div class="ble-faq-item ble-faq-f1">
+          <h3>這是一款免費的學習 App 嗎？</h3>
+          <span class="ble-faq-en-q">Is this a free learning App?</span>
+          <p>是的！「寶貝學英文」為全額免費提供下載與學習使用，讓家長無須負擔訂閱費用，輕鬆給孩子最好的英文啟蒙。</p>
+          <span class="ble-faq-en-a">Yes! "Baby Learns English" is 100% free to download and play with no hidden subscription fees.</span>
+        </div>
+        <!-- 淺藍 FAQ -->
+        <div class="ble-faq-item ble-faq-f2">
+          <h3>支援全球哪些語言下載？</h3>
+          <span class="ble-faq-en-q">Which global languages are supported?</span>
+          <p>本 App 支援全球 10 國語言，包含繁體中文、簡體中文、英文、日文、韓文、法文、德文、西班牙文、越南文與泰文，方便各國家庭下載體驗！</p>
+          <span class="ble-faq-en-a">We support 10 global languages (English, Chinese, Japanese, Korean, Spanish, French, German, Vietnamese, Thai, etc.) for kids worldwide!</span>
+        </div>
+        <!-- 粉橘 FAQ -->
+        <div class="ble-faq-item ble-faq-f3">
+          <h3>適合幾歲的小朋友使用？</h3>
+          <span class="ble-faq-en-q">What age group is this designed for?</span>
+          <p>主要專為 2 至 6 歲的幼兒與學齡前兒童設計。大按鈕與遊戲化互動，讓小寶寶也能輕鬆獨立點擊操作。</p>
+          <span class="ble-faq-en-a">Designed for toddlers and preschoolers aged 2–6. Easy touch controls allow kids to explore independently.</span>
+        </div>
+        <!-- 粉紫 FAQ -->
+        <div class="ble-faq-item ble-faq-f4">
+          <h3>支援哪些手機與平板裝置？</h3>
+          <span class="ble-faq-en-q">Which devices are supported?</span>
+          <p>寶貝學英文完整支援 iOS (iPhone / iPad) 與 Android 系統，點擊下方按鈕即可免費下載安裝！</p>
+          <span class="ble-faq-en-a">Fully supports both iOS (iPhone/iPad) and Android devices. Download for free today!</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- ✨ 底部大下載區：粉藍 (#A2D2FF) 到 粉綠 (#B7E4C7) 柔和淺色漸層 -->
+    <div class="ble-bottom-cta" id="ble-download">
+      <div class="ble-global-badge">🌐 支援全球 10 國語言下載 ｜ Available in 10 Languages</div>
+      <h2>給孩子最歡樂的英文啟蒙禮物！</h2>
+      <div class="ble-cta-sub">Start Learning ABCs Today - 100% FREE</div>
+      <p>立刻免費下載「寶貝學英文」，讓可愛的角色與好玩的遊戲，陪寶寶邊玩邊學！</p>
+      <div class="ble-actions">
+        <a class="ble-store ble-store-ios" href="https://apps.apple.com/app/id6786215177" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M17.05 20.28c-.98.95-2.05.8-3.08.35-1.09-.46-2.09-.48-3.24 0-1.44.62-2.2.44-3.06-.35C2.79 15.25 3.51 7.59 9.05 7.31c1.26.07 2.14.69 2.88.74 1.11-.23 2.17-.89 3.35-.8 1.42.12 2.49.67 3.2 1.7-2.93 1.76-2.23 5.62.45 6.7-.54 1.42-1.24 2.84-1.88 4.63ZM12.03 7.25C11.88 5.14 13.6 3.4 15.57 3.23c.27 2.44-2.22 4.26-3.54 4.02Z"/></svg>
+          <div><small>DOWNLOAD ON THE</small><strong>App Store (iOS)</strong></div>
+        </a>
+        <a class="ble-store ble-store-android" href="https://play.google.com/store/apps/details?id=com.himydream.bunnycatch" target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><path fill="#00d2ff" d="M3.6 2.3a2 2 0 0 0-.45 1.28v16.84c0 .48.16.92.45 1.28l9.5-9.7-9.5-9.7Z"/><path fill="#ffd500" d="m16.27 8.76-3.17 3.23 3.18 3.25 3.87-2.2c1.13-.64 1.13-1.46 0-2.1l-3.88-2.18Z"/><path fill="#ff3a44" d="m3.6 21.7 12.68-6.46-3.18-3.25-9.5 9.71Z"/><path fill="#00e676" d="M3.6 2.3 13.1 12l3.17-3.24L3.6 2.3Z"/></svg>
+          <div><small>GET IT ON</small><strong>Google Play (Android)</strong></div>
+        </a>
+      </div>
+    </div>
+
+    <!-- 頁尾 -->
+    <footer class="ble-footer">
+      <p>寶貝學英文 Baby Learns English © 2026 ｜ 免費幼兒英文啟蒙 App ｜ 聯絡信箱：sohotguys@gmail.com</p>
+    </footer>
+  </div>
+</div>

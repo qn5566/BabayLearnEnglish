@@ -20,7 +20,7 @@
 - HTML5
 - CSS3
 - Vanilla JavaScript
-- Google Fonts：Nunito、Noto Sans TC
+- Google Fonts：Fredoka、Noto Sans TC、Zen Maru Gothic
 
 ## 專案結構
 
@@ -90,3 +90,9 @@ http://localhost:8000
 ## 相關連結
 
 - [HiMtDream 工作室](https://himydream.me/)
+
+## 新版落地頁
+
+首頁已套用 `baby-learn-english.html` 的粉綠／粉藍版型，包含學習特色、藝廊及 FAQ，並保留原有 SEO metadata、MobileApplication JSON-LD 與語言選單。新增區塊保留範本的中英雙語文案；語言選單切換品牌、主標題、介紹、下載入口與 SEO 文案。
+
+特色卡片使用 `res/screenshot/07.png`（接水果遊戲）、`06.png`（單字圖卡）與 `05.png`（關卡地圖）。藝廊展示 `01.png` 至 `07.png`，保留直式比例。品牌與主視覺使用 `res/icon/` 的透明背景兔兔、小熊角色；Hero 封面與 SEO 分享圖繼續使用 `res/1024_ 500.png`。

@@ -93,12 +93,15 @@ function setLanguage(language, remember = false) {
   const text = translations[code];
   document.documentElement.lang = code;
   document.querySelectorAll('[data-i18n]').forEach(element => {
-    element.textContent = text[element.dataset.i18n];
+    element.dataset.defaultText ||= element.textContent;
+    element.textContent = code === 'zh-Hant' ? element.dataset.defaultText : text[element.dataset.i18n];
   });
   document.querySelectorAll('[data-i18n-html]').forEach(element => {
-    element.innerHTML = text[element.dataset.i18nHtml];
+    element.dataset.defaultHtml ||= element.innerHTML;
+    element.innerHTML = code === 'zh-Hant' ? element.dataset.defaultHtml : text[element.dataset.i18nHtml];
   });
   document.title = text.title;
+  document.querySelector('meta[property="og:title"]').content = text.title;
   document.querySelector('meta[name="description"]').content = text.description;
   document.querySelector('meta[property="og:description"]').content = text.description;
   select.value = code;
